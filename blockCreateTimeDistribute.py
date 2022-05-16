@@ -9,6 +9,7 @@ print("read created blocks today")
 url = "https://www.blockchain.com/btc/blocks?format=json"
 resp = requests.get(url=url)
 data = resp.json
+print(data)
 
 header = []
 block = data["blocks"]
